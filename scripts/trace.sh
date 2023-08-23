@@ -1,0 +1,1 @@
+go tool pprof -http=":8989" cpu_profile.out

@@ -1,0 +1,17 @@
+version: '3'
+services:
+  nacos:
+    image: nacos/nacos-server:latest
+    environment:
+      - MODE=standalone
+    ports:
+      - "8848:8848"
+      - "9848:9848"
+      - "5051:5051"
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: host
+
