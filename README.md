@@ -9,6 +9,7 @@ Provide a client supporting generalized invocation with a service registry(nacos
 # How to use it?
 
 > unary invoke 
+
 ``` go 
 	c := NewGenericClient()
 	c.Debug = true
@@ -22,7 +23,6 @@ Provide a client supporting generalized invocation with a service registry(nacos
 		Method:    "Ping",
 		JsonParam: `{"ping":"OK"}`,
 	})
-
-    // Block until receive response from chan
+    // Block until receive response from chan 
 	response := <-r
 ```
